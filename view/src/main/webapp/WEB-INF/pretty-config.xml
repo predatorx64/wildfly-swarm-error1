@@ -1,0 +1,36 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+    <url-mapping id="test">
+        <pattern value="/test" />
+        <view-id value="/pages/test.xhtml" />
+    </url-mapping>
+
+    <!--############################# PUBLIC #################################-->
+
+    <url-mapping id="login">
+        <pattern value="/login" />
+        <view-id value="/pages/public/login.xhtml" />
+    </url-mapping>
+
+    <!--############################# PROTECTED #################################-->
+
+    <url-mapping id="protectedHome">
+        <pattern value="/protected/home" />
+        <view-id value="/pages/protected/home.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="protectedProductSearch">
+        <pattern value="/protected/product/search" />
+        <view-id value="/pages/protected/product_search.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="protectedProductMapper">
+        <pattern value="/protected/product/mapper" />
+        <view-id value="/pages/protected/category_mapper.xhtml" />
+    </url-mapping>
+
+</pretty-config>
+
